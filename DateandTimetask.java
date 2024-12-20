@@ -19,7 +19,7 @@ public class DateandTimetask {
 		int yyyy=Integer.parseInt(y);
 		String datestring=(dd+4)+"/"+(mm+4)+"/"+(yyyy+4);
 		
-		SimpleDateFormat sdf=new SimpleDateFormat("dd:mm:yyyy");
+		SimpleDateFormat sdf=new SimpleDateFormat("dd/mm/yyyy");
 		try {
 			Date date=sdf.parse(datestring);
 			System.out.println("Input Date:"+sdf.format(date));
